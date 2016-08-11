@@ -1,0 +1,650 @@
+How gdb works
+
+http://www.aosabook.org/en/gdb.html    
+
+
+https://www.quora.com/What-is-the-working-flow-of-GDB-once-breakpoints-are-set
+
+http://www.alexonlinux.com/how-debugger-works
+
+
+From: Kalra, Harman 
+Sent: Friday, June 24, 2016 1:15 PM
+To: Kalra, Harman <Harman.Kalra@polycom.com>
+Subject: RE: imp links
+
+https://twiki.polycom.com/twiki/bin/view/Main/LinuxGDBDDDDebug
+
+https://twiki.polycom.com/twiki/bin/viewauth/Main/LinuxDevelopment
+
+https://twiki.polycom.com/twiki/bin/view/Main/DebuggingWithGDB
+
+https://twiki.polycom.com/twiki/bin/view/Main/RetrievingCoreDumpsFromThePhone
+
+
+
+From: Kalra, Harman 
+Sent: Friday, June 24, 2016 12:54 PM
+To: Kalra, Harman <Harman.Kalra@polycom.com>
+Subject: RE: imp links
+
+Debugging with gdb and DDD: The simplest instructions in the world. 
+There are a number of gdb and DDD instructions on the twiki, but they are not only erroneous but also complicated and subject to variations, so I decided to simplify and standardize gdb and DDD startup process. Without further ado, here it is. 
+Set up target. 
+1. In Engineering serial shell, issue de to disable watchdog. That's it. 
+•	Previously it was stated that it is also necessary to kill /usr/local/bin/plcmWatchdog and /bin/sh ./startSpipGUI.sh processes, but it's not really necessary, so don't do it unless you experience a problem. 
+2. If you do not know target IP address, in Engineering serial shell do the following: 
+•	linux sh 
+•	ifconfig -a | grep inet | grep -v "127.0.0.1" 
+•	The "inet addr" is your target IP address. 
+•	exit 
+3. ssh into the target. 
+•	ssh -l root {target IP address} on the host. 
+•	You will need to know the secret root password. 
+•	If you do not know it, get into Linux bash shell on the serial port or telnet by entering linux sh command in Engineering shell. 
+4. Look up the process you want to debug. 
+•	ps | grep {process name} 
+5. If you will be debugging the process from scratch by starting it up again, kill the already running one. Then start it with gdbserver. 
+•	kill -9 {process ID} or pkill {process name} 
+•	/usr/local/bin/gdbserver :{port} {executable} 
+•	For example: /usr/local/bin/gdbserver :2345 /usr/local/root/polyapp 
+6. If you will be attaching to already running process, attach to it with gdbserver. 
+•	/usr/local/bin/gdbserver --attach :{port} {process ID from step 3} 
+•	For example: /usr/local/bin/gdbserver --attach :2345 1019 
+7. Your target is now waiting for gdb to connect to it. 
+Set up host. 
+1. Go to SoundPointIP/IPPhone/Build/HostLinux directory. 
+2. To debug with gdb: 
+•	./gdb.sh {platform},{target IP address}:{target port of gdbserver} {unstripped executable} 
+•	For example: ./gdb.sh bcmring.malbec,10.10.10.10:2345 ../../Generated/Binaries/malbec-glibc_small-armv6jel-wrlinux_3_0/polyapp 
+•	For example: ./gdb.sh bcmring.malbec ../../Generated/Binaries/malbec-glibc_small-armv6jel-wrlinux_3_0/polyapp. Then issue target remote 10.10.10.10:2345 once gdb is running. 
+3. To debug with DDD (graphical front-end to gdb; you need to have DDD package installed on your host): 
+•	./ddd.sh {platform},{target IP address}:{target port of gdbserver} {unstripped executable} 
+•	For example: ./ddd.sh bcmring.malbec,10.10.10.10:2345 ../../Generated/Binaries/malbec-glibc_small-armv6jel-wrlinux_3_0/polyapp 
+•	For example: ./ddd.sh bcmring.malbec ../../Generated/Binaries/malbec-glibc_small-armv6jel-wrlinux_3_0/polyapp. Then issue target remote 10.10.10.10:2345 once DDD/gdb is running. 
+4. Note Remote debugging from host {host IP} message appearing on the target after DDD/gdb attaches to it. 
+5. Ignore messages along the lines of: 
+warning: .dynamic section for "/other/extra/generic/SoundPointIP/IPPhone/Generated/Build/platform/malbec-glibc_small-armv6jel-wrlinux_3_0/export/sysroot/malbec-glibc_small/sysroot/lib/librt.so.1" is not at the expected address
+warning: difference appears to be caused by prelink, adjusting expectations
+6. If info shared command indicates that shared libraries have not been loaded: 
+•	May not be an issue, but occurs if debugged process is started from scratch rather than attached to. 
+•	If you need them loaded or think they should be loaded, execute sharedlibrary or just share command. 
+7. That's it, happy debugging. 
+8. Do not forget to detach from the target when you are done; otherwise debugged process will be killed. 
+•	Enter detach command in gdb or do the same in DDD via File->Detach Process menu. 
+9. Quit gdb (quit command) or close DDD.
+
+From: Kalra, Harman 
+Sent: Thursday, April 28, 2016 2:56 PM
+To: Kalra, Harman <Harman.Kalra@polycom.com>
+Subject: RE: imp links
+
+Raw sockets
+http://www.haifux.org/lectures/217/netLec5.pdf 
+
+http://aschauf.landshut.org/fh/linux/udp_vs_raw/ch01s03.html
+
+https://austinmarton.wordpress.com/2011/09/14/sending-raw-ethernet-packets-from-a-specific-interface-in-c-on-linux/
+
+
+
+From: Kalra, Harman 
+Sent: Tuesday, February 16, 2016 7:12 PM
+To: Kalra, Harman <Harman.Kalra@polycom.com>
+Subject: RE: imp links
+
+https://confluence.polycom.com:8443/pages/viewpage.action?title=Leaf+platform%3A+build+and+installation+procedures&spaceKey=LEAF     …leaf confluence
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Tuesday, February 02, 2016 1:26 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/    …Nice hid explanation
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Wednesday, January 27, 2016 12:59 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://venkateshabbarapu.blogspot.sg/    ….. Nice blog
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Friday, January 22, 2016 2:39 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+ABI,
+http://stackoverflow.com/questions/2171177/what-is-application-binary-interface-abi   …nicely asked question
+
+https://www.quora.com/What-exactly-is-an-Application-Binary-Interface-ABI 
+
+http://www.sco.com/developers/devspecs/gabi41.pdf   
+
+http://stackoverflow.com/questions/3784389/difference-between-api-and-abi/3784724#comment39838598_3784724
+
+
+
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Thursday, January 21, 2016 6:01 PM
+To: Kalra, Harman
+Subject: FW: imp links
+
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Wednesday, January 20, 2016 12:29 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.pentesteracademy.com/course?id=7        …..v nice videos (IMP)
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Tuesday, January 19, 2016 1:25 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Fork inp
+http://unix.stackexchange.com/questions/136637/why-do-we-need-to-fork-to-create-new-processes/136649#136649 
+
+https://linuxtrainers.wordpress.com/2014/12/31/how-fork-system-call-works-what-is-shared-between-parent-and-child-process/
+
+http://unix.stackexchange.com/questions/179604/how-do-fork-and-exec-work
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Monday, January 18, 2016 7:57 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.valvers.com/open-software/raspberry-pi/step01-bare-metal-programming-in-cpt1/     …… raspberruy pi baremetal
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Monday, January 18, 2016 3:20 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+https://kerneltweaks.wordpress.com/tag/workqueue/     …..nice blog
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Wednesday, January 06, 2016 3:08 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+gcc -O -S -fverbose-asm foo.c
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Wednesday, January 06, 2016 3:06 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap?rq=1    ….nice exp on heap n stack
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Monday, January 04, 2016 6:47 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+
+http://stackoverflow.com/questions/4528568/how-does-the-linux-kernel-manage-less-than-1gb-physical-memory?rq=1
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Monday, January 04, 2016 3:18 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://stackoverflow.com/users/3751580/saurabh-sengar   ………..nic articales
+
+http://stackoverflow.com/questions/4039899/when-should-we-use-mutex-and-when-should-we-use-semaphore/27606959#27606959  
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Thursday, November 26, 2015 8:14 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Some nice linux blogs
+
+http://learnlinuxconcepts.blogspot.in/2014/10/this-blog-is-to-help-those-students-and.html
+
+https://www.cyphar.com/blog/post/making-a-simple-scheduler-for-arduino
+
+http://linuxkernel51.blogspot.sg/
+
+http://www.linuxfoundation.org/blogs/gregkh
+
+http://www.kroah.com/log/linux/container_of.html
+
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Thursday, November 26, 2015 12:45 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+https://saurabhsengarblog.wordpress.com/
+Kernel Patch Submission tutorial
+Posted on November 26, 2015 
+Getting your patch submitted in Linux kernel could be one of the most satisfying job for a newbie Linux kernel developer. Until my first patch got in to mainline I was not knowing that this could be a very easy task as it seems to be.
+There are many ways to submit a patch to Linux community, but will not discuss all of them as it could be very confusing. I have gone through all and came up with one most sure shot procedure.
+Ok, so here is to the point step by step guide to submit your first linux kernel patch, and have your name in Linux kernel :)
+I am considering you are doing all this in Ubuntu machine, for other flavors please tweak the commands accordingly.
+________________________________________
+ I. Tools Set up
+________________________________________
+    1) Install git : version control system for your Linux kernel
+sudo apt-get install git
+    2) Install git mail : you will be requiring this to send patches to Linux community
+sudo apt-get install git-email
+    3) Config git : create a file at your home directory vim ~/.gitconfig, and have the below details in it
+[user]
+name = Saurabh Sengar
+email = saurabh.truth@gmail.com
+[sendemail]
+smtpencryption = tls
+smtpserver = smtp.gmail.com
+smtpuser = saurabh.truth@gmail.com
+smtpserverport = 587
+smtppass = XXXXXX
+The above example is for my gmail id configuration to git. Change my email ids and names with yours, change smtp server if your are using an email other then gmail, but Heay ! who doesn’t have gmail id ? keep it simple :). And yeah don’t forget to write your actual gmail login password in place of XXXXXX, yes that’s right you heard it correct ;)
+    4) Enable access for less secure apps in gmail : This is a very important step, otherwise gmail will not let you send your mails via git email client. So, to do this log in to your gmail id, and in same browser enter the below url.
+https://www.google.com/settings/security/lesssecureapps
+It will show the option to ‘Turn on’ your access of less secure apps, select that !
+________________________________________
+II. Download Linux kernel
+________________________________________
+Go to your home directory, or any folder where you want to keep your linux kernel repository, run the below commands
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+This will take some time, go watch some movie and come back, don’t worry I will be waiting here.
+________________________________________
+ III. Creating a Patch
+________________________________________
+You have your changes ready ? in case you are not sure what you need to submit go to section V to know how all you begin to create the patches for contributing to linux kernel.
+Say, you want to change the file ” drivers/staging/iio/iio_simple_dummy_buffer.c”
+1 ) Do your changes in file and save it
+vim drivers/staging/iio/iio_simple_dummy_buffer.c
+2) Add the changes to your git
+git add drivers/staging/iio/iio_simple_dummy_buffer.c
+3) Commit your changes
+git commit -s -v
+You need to add a subject and description of changes you have made in patch. Do a git log of the file you have changed in order to get the format of subject and description for that particular file
+Thing to make sure is that your sign-off tag should be there in this patch, anyway -s argument of above command will take care of it don’t worry.
+4) Whom to send : Get the maintainers email ids by running get_maintainer script on your patch or file you changed
+./script/get_maintainer.pl -f  drivers/staging/iio/iio_simple_dummy_buffer.c
+./script/get_maintainer.pl –patch /tmp/0001-test.patch
+copy these mail ids
+And next section will be about sending your patch to linux community, but before that make sure your changes doesn’t have any coding style issues, this can be checked by script ./script/checkpatch.pl
+./script/checkpatch.pl -f drivers/staging/iio/iio_simple_dummy_buffer.c
+./script/checkpatch.pl –patch /tmp/0001-test.patch
+ 
+________________________________________
+IV. Sending The Patch
+________________________________________
+This is easy
+git send-email –annotate HEAD^1
+it will prompt for email ids whom to sent, paste the email ids copied “whom to send” section. It may also ask for ‘in reply to’ you can just avoid it by pressing enter for first patch as this option is for replying on an existing mail chain. Then for final confirmation it will ask, press ‘y’ … hit enter …. and YOU ARE DONE !! :)
+After some 10 -15 minutes you can see your patch in lkml.org site, good start :). And if every thing goes fine soon your patch will be merged in mainline. Depending on the complexity of patch and availability of maintainers your patch can be given feed back ranging from 1 minute to 20 days. In case you don’t get any feedback ping them back, but at least give around 20 days to Linux Kernel Maintainers to respond.
+________________________________________
+VI. What to submit
+________________________________________
+I would suggest to start your patch submission from driver/staging directory, until you are confident enough on how to send patches.
+You can run some static analyzer tool in order to fix there errors, but keep in mind that there could be many false positives to report by them. So, the output of these tools should be looked with care.
+Run Checkpatch.pl on kernel, and fix the errors/warnings reported by it, these are many.
+Run coccicheck: http://coccinelle.lip6.fr/
+And if you are confident in some module or framework of linux kernel, go review them and in case you feel you can make them better go ahead and do the changes.
+And as the last advice I can give you while interacting with Linux kernel developers in lkml, be patient and be humble :)
+Get your hands dirty and let me know if you need any help in comments section.
+ 
+Hope this helps,
+Saurabh Singh Sengar
+email-to : saurabh.truth@gmail.com
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Friday, October 30, 2015 5:37 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.gossamer-threads.com/lists/engine?list=linux&do%3Dsearch_results%3Bsearch_forum%3Dall%3Bsearch_user_id%3D75204%3Bmh%3D25=Show+user%27s+posts       ………….saurabh patches
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Wednesday, October 07, 2015 1:16 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Dynamic printing
+https://lwn.net/Articles/434833/
+
+http://elinux.org/Debugging_by_printing
+
+	echo 'file hci_core.c +p' > <debugfs>/dynamic_debug/control
+ 	
+ 	before that run dmesg -n 7
+ 	
+ 
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Thursday, September 10, 2015 9:39 AM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.quora.com/What-is-the-best-tutorial-for-developing-operating-systems-from-scratch ....... Imp OS tutroails
+
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Monday, August 17, 2015 8:31 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+https://www.youtube.com/channel/UCthV50MozQIfawL9a_g5rdg           …assembly videos
+
+Thanks & Regards
+Harman Kalra
+
+From: Kalra, Harman 
+Sent: Thursday, July 16, 2015 6:21 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://people.cs.clemson.edu/~westall/853/notes/          ….. Imp networking notes
+
+http://www.haifux.org/lectures/217/  ……..good slides on netwrks
+
+http://www.linuxjournal.com/article/7356?page=0,0            ….Netlink sockets, nice article
+
+
+
+From: Kalra, Harman 
+Sent: Wednesday, July 01, 2015 5:31 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.scriptoriumdesigns.com/embedded/gpio_in.php          …. Nice description on hw details, like gpio high low logic, pull ups and pull down
+
+
+From: Kalra, Harman 
+Sent: Wednesday, June 17, 2015 6:51 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.eggwall.com/2011/09/android-arm-assembly-trivial-program.html        ……….. Good tutorial on ARM assembly
+
+http://amitshah.bizhat.com/arm/arm_linux_boot-1.html#ss1.1           ………..   arm linux bootup files, head.s etc.
+
+From: Kalra, Harman 
+Sent: Thursday, June 04, 2015 8:13 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.ibm.com/developerworks/library/l-tasklets/  ………….. Nice article on tasklet, workque
+
+From: Kalra, Harman 
+Sent: Thursday, May 28, 2015 1:36 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+https://github.com/0xAX/linux-insides ........ Excellent articles on kernel internals ….Must read
+
+From: Kalra, Harman 
+Sent: Thursday, May 14, 2015 9:04 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Diff betw arm-elf and arm-none-eabi
+http://stackoverflow.com/questions/5961701/arm-gcc-toolchain-as-arm-elf-or-arm-none-eabi-what-is-the-difference?rq=1
+
+https://community.freescale.com/thread/313490 
+
+http://stackoverflow.com/questions/8060174/what-are-the-purposes-of-the-arm-abi-and-eabi/8063350#8063350   ….purpose of arm-abi n eabi
+
+http://www.slideshare.net/itembedded/gnu-toolchain?related=1               ….. Nice presentation on toolchain and components
+
+http://www.slideshare.net/jserv/helloworld-internals
+
+
+
+
+
+From: Kalra, Harman 
+Sent: Tuesday, May 05, 2015 8:19 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://www.quora.com/Why-is-malloc-harmful-in-embedded-systems   
+
+https://www.usenix.org/legacy/event/usenix2000/freenix/full_papers/silvers/silvers_html/         ………. Memory Caching Subsystem for NetBSD
+http://www.linux-mag.com/id/2617/    ….device driver model
+http://www.linux-mag.com/?s=Sreekrishnan+Venkateswaran    
+
+
+
+From: Kalra, Harman 
+Sent: Wednesday, March 04, 2015 1:01 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Scxheduling and policies
+
+ 	http://man7.org/tlpi/code/online/dist/procpri/t_setpriority.c.html
+ 
+ 	http://www.drdobbs.com/soft-real-time-programming-with-linux/184402031
+
+ 	 
+ 
+
+
+From: Kalra, Harman 
+Sent: Tuesday, February 24, 2015 8:14 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Kernel Internals & Device Drivers
+
+http://www.slac.stanford.edu/comp/unix/package/rtems/doc/html/ld/ld.info.Scripts.html     ….Linker scripts concept
+
+https://translate.google.com.sg/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.csdn.net%2Fshichaog%2Farticle%2Fdetails%2F40218763&edit-text=&act=url    ……How Linux3.10 loads up
+
+https://translate.googleusercontent.com/translate_c?act=url&depth=1&hl=en&ie=UTF8&prev=_t&rurl=translate.google.com.sg&sl=auto&tl=en&u=http://blog.csdn.net/shichaog/article/details/41169981&usg=ALkJrhiYnM1brhvgK52SHEBj4tclmdRvjw   ….Nice i2c driver description
+
+https://translate.google.com.sg/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.csdn.net%2Fshichaog%2Farticle%2Fdetails%2F40592545&edit-text=&act=url    ….Serial Driver
+
+https://translate.googleusercontent.com/translate_c?act=url&depth=1&hl=en&ie=UTF8&prev=_t&rurl=translate.google.com.sg&sl=auto&tl=en&u=http://blog.csdn.net/droidphone/article/details/6271122&usg=ALkJrhhTdaRGL6nWJ8356kvmW0NsyB8OBg   ….alsa driver
+
+https://translate.google.com.sg/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.chinaunix.net%2Fuid-23299796-id-4126458.html&edit-text=&act=url   …..alsa driver
+
+https://translate.googleusercontent.com/translate_c?act=url&depth=1&hl=en&ie=UTF8&prev=_t&rurl=translate.google.com.sg&sl=auto&tl=en&u=http://blog.chinaunix.net/uid-23299796-id-3756835.html&usg=ALkJrhjzoIjOySYboGXLK6PhGZoksDqjpg   ……. CPU freq driver
+
+https://translate.googleusercontent.com/translate_c?act=url&depth=1&hl=en&ie=UTF8&prev=_t&rurl=translate.google.com.sg&sl=auto&tl=en&u=http://blog.chinaunix.net/uid-23299796-id-3844525.html&usg=ALkJrhjAy7Js1oZCBYaoq2CIC_01bx33rA   …driver model
+
+https://translate.googleusercontent.com/translate_c?act=url&depth=1&hl=en&ie=UTF8&prev=_t&rurl=translate.google.com.sg&sl=auto&tl=en&u=http://blog.csdn.net/linweig/article/details/5341211&usg=ALkJrhhNGU5dipy_HaPvOZvqJmcJh_gdhw#comments  …..platform device
+
+http://linuxburps.blogspot.sg/2013/12/linux-device-model.html
+
+http://www.linuxjournal.com/article/6717    ….device driver model by GKH pat 1
+http://www.linuxjournal.com/article/6872
+
+http://www.linuxjournal.com/user/800887   …All posts by GKH
+
+
+
+From: Kalra, Harman 
+Sent: Monday, February 16, 2015 8:26 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Watchdog
+http://www.designworldonline.com/working-with-single-and-multistage-watchdog-timers/    ……………Multiple watchdog design
+
+http://www.jann.cc/2013/02/02/linux_watchdog.html
+
+http://www.ganssle.com/watchdogs.htm   ….Designing watchdog timers
+
+https://embeddedfreak.wordpress.com/2010/08/23/howto-use-linux-watchdog/   …… Watchdog application
+
+http://www.embedded.com/electronics-blogs/beginner-s-corner/4023849/Introduction-to-Watchdog-Timers    ……Nice Article
+
+http://linux.die.net/man/8/watchdog 
+
+From: Kalra, Harman 
+Sent: Friday, February 06, 2015 7:43 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+Alsa programming
+http://www.sabi.co.uk/Notes/linuxSoundALSA.html
+
+
+http://www.linuxjournal.com/article/6735?page=0,2
+
+
+Kbuild
+http://www.linuxjournal.com/content/kbuild-linux-kernel-build-system?page=0,0
+
+Makefile
+https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+
+
+From: Kalra, Harman 
+Sent: Friday, February 06, 2015 7:42 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://kernelnewbies.org/RootFileSystem   ……. How kernel initerprets root=/dev/mtdblock2 kernel parameter
+
+http://unix.stackexchange.com/questions/9944/how-does-a-kernel-mount-the-root-partition  ……..How kernel mount root partition 
+
+http://processors.wiki.ti.com/index.php/Initrd    …… Steps to create a initrd
+
+http://www.linux.com/learn/linux-training/92607-the-kernel-newbie-corner-qinitrdq-and-qinitramfsq-whats-up-with-that ...Part1
+http://www.linux.com/learn/linux-career-center/114923-the-kernel-newbie-corner-qinitrdq-and-qinitramfsq-some-unfinished-business  …..Nice article on initramfs
+
+http://stackoverflow.com/questions/10603104/the-difference-between-initrd-and-initramfs
+
+http://archive.linuxgizmos.com/introducing-initramfs-a-new-model-for-initial-ram-disks-a/
+
+http://processors.wiki.ti.com/index.php/Creating_a_Root_File_System_for_Linux_on_OMAP35x#Configure_the_Linux_Kernel_for_RAMDISK_support  
+
+
+From: Kalra, Harman 
+Sent: Tuesday, February 03, 2015 12:42 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+ 	
+LCD drivers for bersake
+drivers/char/st7567/st7567fb.c  ……pegatron driver	 
+ 	drivers/video/bcmring_pif.c  …….pif driver
+drivers/video/bcmring_fb.c  ……. Lcd fb driver 	 
+ 	drivers/char/bcmring/bcmring_lcd.c    …….lcd initialization	 
+ 	drivers/video/display/display-st7567.c  …..panel driver
+ 	 
+ 
+
+
+From: Kalra, Harman 
+Sent: Monday, January 12, 2015 4:14 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://duartes.org/gustavo/blog/category/internals/ 
+
+http://www.osdever.net/bkerndev/index.php
+
+
+
+From: Kalra, Harman 
+Sent: Wednesday, January 07, 2015 6:04 PM
+To: Kalra, Harman
+Subject: RE: imp links
+
+http://linuxfoundation.ubicast.tv/permalink/29/iframe/     …Nice vide on spi frame buffer driver
+
+http://elinux.org/images/1/19/Passing_Time_With_SPI_Framebuffer_Driver.pdf    ….Slides for spi frame buffer driver
+
+From: Kalra, Harman 
+Sent: Wednesday, January 07, 2015 5:46 PM
+To: Kalra, Harman
+Subject: imp links
+
+http://www.embedded.com/design/prototyping-and-development/4006455/Writing-drivers-for-common-touch-screen-interface-hardware   ……..Touch Screen Driver
+
+http://embedded-webkit.blogspot.sg/2013/05/baby-steps-to-writing-linux-lcd-driver.html           ….. Lcd Driver basics
+
+
+
+Senior Software Engineer, IIC Voice Endpoints Engineering,
+Polycom Technology (R & D) Centre Private Limited,
+4th Floor, Blk-1, DLF Cyber City ,Plot #129-132,
+APBH Colony, Gachibowli, 
+Hyderabad – 500019 | T: +91 40 44331743 | M: +91 9573979472
+www.polycom.com
+ 
+ 
+ 
+ 
+ 
+ 
+
+This communication (including any attachments) may contain privileged or confidential informa¬tion of Polycom and is intended for a 
+specific individual.  If you are not the intended recipient, you should delete this communication, including any attachments without 
+reading or saving them in any manner and you are hereby notified that any disclosure, copying, or distribution of this communication, 
+or the taking of any action based on it, is strictly prohibited.
+ Please consider your environmental responsibility before printing this e-mail.
+
