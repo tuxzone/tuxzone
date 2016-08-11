@@ -8,10 +8,6 @@ https://www.quora.com/What-is-the-working-flow-of-GDB-once-breakpoints-are-set
 http://www.alexonlinux.com/how-debugger-works
 
 
-From: Kalra, Harman 
-Sent: Friday, June 24, 2016 1:15 PM
-To: Kalra, Harman <Harman.Kalra@polycom.com>
-Subject: RE: imp links
 
 https://twiki.polycom.com/twiki/bin/view/Main/LinuxGDBDDDDebug
 
@@ -22,11 +18,6 @@ https://twiki.polycom.com/twiki/bin/view/Main/DebuggingWithGDB
 https://twiki.polycom.com/twiki/bin/view/Main/RetrievingCoreDumpsFromThePhone
 
 
-
-From: Kalra, Harman 
-Sent: Friday, June 24, 2016 12:54 PM
-To: Kalra, Harman <Harman.Kalra@polycom.com>
-Subject: RE: imp links
 
 Debugging with gdb and DDD: The simplest instructions in the world. 
 There are a number of gdb and DDD instructions on the twiki, but they are not only erroneous but also complicated and subject to variations, so I decided to simplify and standardize gdb and DDD startup process. Without further ado, here it is. 
@@ -74,10 +65,6 @@ warning: difference appears to be caused by prelink, adjusting expectations
 •	Enter detach command in gdb or do the same in DDD via File->Detach Process menu. 
 9. Quit gdb (quit command) or close DDD.
 
-From: Kalra, Harman 
-Sent: Thursday, April 28, 2016 2:56 PM
-To: Kalra, Harman <Harman.Kalra@polycom.com>
-Subject: RE: imp links
 
 Raw sockets
 http://www.haifux.org/lectures/217/netLec5.pdf 
@@ -88,40 +75,18 @@ https://austinmarton.wordpress.com/2011/09/14/sending-raw-ethernet-packets-from-
 
 
 
-From: Kalra, Harman 
-Sent: Tuesday, February 16, 2016 7:12 PM
-To: Kalra, Harman <Harman.Kalra@polycom.com>
-Subject: RE: imp links
+
 
 https://confluence.polycom.com:8443/pages/viewpage.action?title=Leaf+platform%3A+build+and+installation+procedures&spaceKey=LEAF     …leaf confluence
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Tuesday, February 02, 2016 1:26 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/    …Nice hid explanation
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Wednesday, January 27, 2016 12:59 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://venkateshabbarapu.blogspot.sg/    ….. Nice blog
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Friday, January 22, 2016 2:39 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 ABI,
 http://stackoverflow.com/questions/2171177/what-is-application-binary-interface-abi   …nicely asked question
@@ -136,33 +101,11 @@ http://stackoverflow.com/questions/3784389/difference-between-api-and-abi/378472
 
 
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Thursday, January 21, 2016 6:01 PM
-To: Kalra, Harman
-Subject: FW: imp links
-
-
-
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Wednesday, January 20, 2016 12:29 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.pentesteracademy.com/course?id=7        …..v nice videos (IMP)
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Tuesday, January 19, 2016 1:25 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Fork inp
 http://unix.stackexchange.com/questions/136637/why-do-we-need-to-fork-to-create-new-processes/136649#136649 
@@ -172,77 +115,33 @@ https://linuxtrainers.wordpress.com/2014/12/31/how-fork-system-call-works-what-i
 http://unix.stackexchange.com/questions/179604/how-do-fork-and-exec-work
 
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Monday, January 18, 2016 7:57 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.valvers.com/open-software/raspberry-pi/step01-bare-metal-programming-in-cpt1/     …… raspberruy pi baremetal
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Monday, January 18, 2016 3:20 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 https://kerneltweaks.wordpress.com/tag/workqueue/     …..nice blog
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Wednesday, January 06, 2016 3:08 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 gcc -O -S -fverbose-asm foo.c
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Wednesday, January 06, 2016 3:06 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap?rq=1    ….nice exp on heap n stack
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Monday, January 04, 2016 6:47 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 
 http://stackoverflow.com/questions/4528568/how-does-the-linux-kernel-manage-less-than-1gb-physical-memory?rq=1
 
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Monday, January 04, 2016 3:18 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://stackoverflow.com/users/3751580/saurabh-sengar   ………..nic articales
 
 http://stackoverflow.com/questions/4039899/when-should-we-use-mutex-and-when-should-we-use-semaphore/27606959#27606959  
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Thursday, November 26, 2015 8:14 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Some nice linux blogs
 
@@ -258,13 +157,6 @@ http://www.kroah.com/log/linux/container_of.html
 
 
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Thursday, November 26, 2015 12:45 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 https://saurabhsengarblog.wordpress.com/
 Kernel Patch Submission tutorial
@@ -344,23 +236,9 @@ Saurabh Singh Sengar
 email-to : saurabh.truth@gmail.com
 
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Friday, October 30, 2015 5:37 PM
-To: Kalra, Harman
-Subject: RE: imp links
-
 http://www.gossamer-threads.com/lists/engine?list=linux&do%3Dsearch_results%3Bsearch_forum%3Dall%3Bsearch_user_id%3D75204%3Bmh%3D25=Show+user%27s+posts       ………….saurabh patches
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Wednesday, October 07, 2015 1:16 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Dynamic printing
 https://lwn.net/Articles/434833/
@@ -374,34 +252,15 @@ http://elinux.org/Debugging_by_printing
  
 
 
-Thanks & Regards
-Harman Kalra
-
-From: Kalra, Harman 
-Sent: Thursday, September 10, 2015 9:39 AM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.quora.com/What-is-the-best-tutorial-for-developing-operating-systems-from-scratch ....... Imp OS tutroails
 
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Monday, August 17, 2015 8:31 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 https://www.youtube.com/channel/UCthV50MozQIfawL9a_g5rdg           …assembly videos
 
-Thanks & Regards
-Harman Kalra
 
-From: Kalra, Harman 
-Sent: Thursday, July 16, 2015 6:21 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://people.cs.clemson.edu/~westall/853/notes/          ….. Imp networking notes
 
@@ -411,41 +270,21 @@ http://www.linuxjournal.com/article/7356?page=0,0            ….Netlink sockets
 
 
 
-From: Kalra, Harman 
-Sent: Wednesday, July 01, 2015 5:31 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.scriptoriumdesigns.com/embedded/gpio_in.php          …. Nice description on hw details, like gpio high low logic, pull ups and pull down
 
 
-From: Kalra, Harman 
-Sent: Wednesday, June 17, 2015 6:51 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.eggwall.com/2011/09/android-arm-assembly-trivial-program.html        ……….. Good tutorial on ARM assembly
 
 http://amitshah.bizhat.com/arm/arm_linux_boot-1.html#ss1.1           ………..   arm linux bootup files, head.s etc.
 
-From: Kalra, Harman 
-Sent: Thursday, June 04, 2015 8:13 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://www.ibm.com/developerworks/library/l-tasklets/  ………….. Nice article on tasklet, workque
 
-From: Kalra, Harman 
-Sent: Thursday, May 28, 2015 1:36 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 https://github.com/0xAX/linux-insides ........ Excellent articles on kernel internals ….Must read
 
-From: Kalra, Harman 
-Sent: Thursday, May 14, 2015 9:04 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Diff betw arm-elf and arm-none-eabi
 http://stackoverflow.com/questions/5961701/arm-gcc-toolchain-as-arm-elf-or-arm-none-eabi-what-is-the-difference?rq=1
@@ -460,13 +299,6 @@ http://www.slideshare.net/jserv/helloworld-internals
 
 
 
-
-
-From: Kalra, Harman 
-Sent: Tuesday, May 05, 2015 8:19 PM
-To: Kalra, Harman
-Subject: RE: imp links
-
 http://www.quora.com/Why-is-malloc-harmful-in-embedded-systems   
 
 https://www.usenix.org/legacy/event/usenix2000/freenix/full_papers/silvers/silvers_html/         ………. Memory Caching Subsystem for NetBSD
@@ -475,10 +307,6 @@ http://www.linux-mag.com/?s=Sreekrishnan+Venkateswaran
 
 
 
-From: Kalra, Harman 
-Sent: Wednesday, March 04, 2015 1:01 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Scxheduling and policies
 
@@ -488,12 +316,6 @@ Scxheduling and policies
 
  	 
  
-
-
-From: Kalra, Harman 
-Sent: Tuesday, February 24, 2015 8:14 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 Kernel Internals & Device Drivers
 
@@ -522,13 +344,6 @@ http://www.linuxjournal.com/article/6872
 
 http://www.linuxjournal.com/user/800887   …All posts by GKH
 
-
-
-From: Kalra, Harman 
-Sent: Monday, February 16, 2015 8:26 PM
-To: Kalra, Harman
-Subject: RE: imp links
-
 Watchdog
 http://www.designworldonline.com/working-with-single-and-multistage-watchdog-timers/    ……………Multiple watchdog design
 
@@ -542,10 +357,7 @@ http://www.embedded.com/electronics-blogs/beginner-s-corner/4023849/Introduction
 
 http://linux.die.net/man/8/watchdog 
 
-From: Kalra, Harman 
-Sent: Friday, February 06, 2015 7:43 PM
-To: Kalra, Harman
-Subject: RE: imp links
+
 
 Alsa programming
 http://www.sabi.co.uk/Notes/linuxSoundALSA.html
@@ -561,10 +373,6 @@ Makefile
 https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
 
 
-From: Kalra, Harman 
-Sent: Friday, February 06, 2015 7:42 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://kernelnewbies.org/RootFileSystem   ……. How kernel initerprets root=/dev/mtdblock2 kernel parameter
 
@@ -582,11 +390,6 @@ http://archive.linuxgizmos.com/introducing-initramfs-a-new-model-for-initial-ram
 http://processors.wiki.ti.com/index.php/Creating_a_Root_File_System_for_Linux_on_OMAP35x#Configure_the_Linux_Kernel_for_RAMDISK_support  
 
 
-From: Kalra, Harman 
-Sent: Tuesday, February 03, 2015 12:42 PM
-To: Kalra, Harman
-Subject: RE: imp links
-
  	
 LCD drivers for bersake
 drivers/char/st7567/st7567fb.c  ……pegatron driver	 
@@ -598,10 +401,6 @@ drivers/video/bcmring_fb.c  ……. Lcd fb driver
  
 
 
-From: Kalra, Harman 
-Sent: Monday, January 12, 2015 4:14 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://duartes.org/gustavo/blog/category/internals/ 
 
@@ -609,33 +408,17 @@ http://www.osdever.net/bkerndev/index.php
 
 
 
-From: Kalra, Harman 
-Sent: Wednesday, January 07, 2015 6:04 PM
-To: Kalra, Harman
-Subject: RE: imp links
 
 http://linuxfoundation.ubicast.tv/permalink/29/iframe/     …Nice vide on spi frame buffer driver
 
 http://elinux.org/images/1/19/Passing_Time_With_SPI_Framebuffer_Driver.pdf    ….Slides for spi frame buffer driver
 
-From: Kalra, Harman 
-Sent: Wednesday, January 07, 2015 5:46 PM
-To: Kalra, Harman
-Subject: imp links
 
 http://www.embedded.com/design/prototyping-and-development/4006455/Writing-drivers-for-common-touch-screen-interface-hardware   ……..Touch Screen Driver
 
 http://embedded-webkit.blogspot.sg/2013/05/baby-steps-to-writing-linux-lcd-driver.html           ….. Lcd Driver basics
 
 
-
-Senior Software Engineer, IIC Voice Endpoints Engineering,
-Polycom Technology (R & D) Centre Private Limited,
-4th Floor, Blk-1, DLF Cyber City ,Plot #129-132,
-APBH Colony, Gachibowli, 
-Hyderabad – 500019 | T: +91 40 44331743 | M: +91 9573979472
-www.polycom.com
- 
  
  
  
