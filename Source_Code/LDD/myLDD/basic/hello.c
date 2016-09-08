@@ -3,9 +3,11 @@
 
 MODULE_LICENSE("GPL");
 
+extern int sum;
+
 static __init int hello_init (void)
 {
-	printk("Hello World\n");
+	printk("Hello World, sum is %d\n",sum);
     return 0;
 }
 

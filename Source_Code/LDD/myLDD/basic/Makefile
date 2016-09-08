@@ -1,1 +1,1 @@
-obj-m := hello.o
+obj-m := hello.o param.o
