@@ -1,3 +1,32 @@
+http://pages.cs.wisc.edu/~remzi/OSTEP/  …good os book
+
+https://github.com/shihyu/linux_kernel_driver ... Good github to checkout
+
+https://github.com/agelastic/eudyptula
+
+https://github.com/shihyu/linux_kernel_driver/tree/master/example/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux%E9%A9%85%E5%8B%95%E6%A8%A1%E6%9D%BF%E7%B2%BE%E8%AC%9B%E8%88%87%E9%A0%85%E7%9B%AE%E5%AF%A6%E8%B8%90/%E7%AC%AC9%E7%AB%A0  ….. device bus kset kobject platform drivers
+
+
+
+Memory Interfacing:
+https://www.quora.com/How-does-memory-interfacing-work-How-does-CPU-generate-address-logical-virtual-physical-for-cache-and-main-memory-as-well-as-virtual-memory-and-execute-data
+
+https://www.classle.net/#!/classle/faq/what-memory-interfacing/
+
+https://www.quora.com/Why-does-logical-address-generation-by-cpu-is-needed-At-what-time-CPU-generates-logical-address-for-the-particular-process
+
+
+
+https://kerneltweaks.wordpress.com/                  …………Nice blog
+
+Chinese LCD driver
+
+http://www.programering.com/a/MjN2gzNwATc.html
+
+
+Rasp pi low level programming
+http://www.pieter-jan.com/node/15
+
 How gdb works
 
 http://www.aosabook.org/en/gdb.html    
