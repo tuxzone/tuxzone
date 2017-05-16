@@ -1,3 +1,11 @@
+Good networking olectuers
+http://www.haifux.org/lectures17.html
+
+http://www.haifux.org/lectures/217/netLec5.pdf
+
+http://www.haifux.org/video.html
+
+
 http://pages.cs.wisc.edu/~remzi/OSTEP/  …good os book
 
 https://github.com/shihyu/linux_kernel_driver ... Good github to checkout
