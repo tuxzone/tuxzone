@@ -1,3 +1,8 @@
+Nice wiki
+http://wiki.dreamrunner.org/public_html/
+http://wiki.dreamrunner.org/public_html/Embedded-System/Linux-Device-Tree.html
+http://wiki.dreamrunner.org/public_html/Embedded-System/kernel/DMA.html
+
 Good networking olectuers
 http://www.haifux.org/lectures17.html
 
