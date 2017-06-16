@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "ringBuff.h"
 
-
+// Removing this function for this mcommit
+#if 0
 void initialize_ring_buffer(RINGBUFF * ringbuff)
-{	
+{
 	int i,j;
 	ringbuff->last=-1;
 	ringbuff->first=-1;
@@ -12,9 +13,9 @@ void initialize_ring_buffer(RINGBUFF * ringbuff)
 		for(i=0;i<20;i++)
 			ringbuff->recBuff->repData[i]=0;
 	}
-	
-}
 
+}
+#endif
 int isEmpty (RINGBUFF * ringbuff)
 {
 	return (ringbuff->first == -1);
@@ -52,7 +53,7 @@ int return_ring_buffer(RINGBUFF *ringbuff)
 	if(ringbuff->first == ringbuff->last)  //Returning back the last alloted buffer
 		ringbuff->first = ringbuff->last =-1;
 
- return 1;	
+ return 1;
 
 }
 
