@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "ringBuff.h"
 
+//Doing changes in Practise branch
 // Removing this function for this mcommit
 #if 0
 void initialize_ring_buffer(RINGBUFF * ringbuff)
