@@ -1,0 +1,84 @@
+#!/bin/bash
+#set -x
+src=`pwd | grep -o ".*OCTEON-SDK"`
+i=10
+if [ "$src" != "" ] && [ -f $src/cscope.out ]; then
+		echo "In SDK directory"
+		i=0
+else 
+		src=.
+fi
+
+IGNORE_DIR=""
+rebuild=0
+follow_symlinks=0 
+cscope_opt="-p 5 -d"
+while getopts "i:lrs" opt; do
+  case $opt in
+    l)  
+      src=.
+      i=0
+      echo "Forced to use local cscope.out"
+      ;; 
+    r)
+      rebuild=1
+      ;;
+    s)
+      follow_symlinks=1
+      ;;
+    i)
+      IGNORE_DIR="-e $OPTARG $IGNORE_DIR"
+      ;;
+    \?) 
+      echo "Invalid option: -$OPTARG" >&2
+      echo Usage: $(basename $0) -lrs
+      exit 1
+      ;;  
+  esac
+done
+
+lsrc=.
+while [[ $i -ne 0 ]];
+do
+
+	if [ -f $lsrc/cscope.out ]; then
+		src=$lsrc
+		break
+	fi
+	lsrc=$lsrc/..
+	i=`expr $i - 1`
+done
+
+if [[ $rebuild -ne 0 ]] && [ -f $src/cscope.out ]
+then
+	echo "Removing old cscope DB files for rebuild "
+	rm -vf $src/cscope.*
+fi
+
+if [ -f $src/cscope.out ]; then
+		echo "Using cscope DB from " $src
+else
+	echo "Building cscope DB from " $src
+	if [[ $follow_symlinks -ne 1 ]]; then
+		find_opts="-H"
+	else
+		find_opts="-L"
+	fi
+	pushd $src
+	find $find_opts $PWD -name "*.[c,h,S,s]" -type f -fprint cscope.files
+	find $find_opts $PWD -name "*.cpp" -type f >> cscope.files
+	find $find_opts $PWD -name "*.lua" -type f >> cscope.files
+	if [[ "$IGNORE_DIR" != "" ]]
+	then
+		echo "Using grep option " "$IGNORE_DIR" "to ignore directories."
+		rm cscope.files.bkp
+		mv cscope.files cscope.files.bkp
+		cat cscope.files.bkp | grep -v $IGNORE_DIR >cscope.files
+	fi
+	cscope -i cscope.files -qubk
+	popd
+fi
+export CSCOPE_DB=$src/cscope.out
+cscope $cscope_opt -f $src/cscope.out
+export -n CSCOPE_DB
+

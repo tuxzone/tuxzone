@@ -1,0 +1,45 @@
+# tmux aliases                                                                                                                                                          
+# For creating a new session
+tnew_session(){
+        # To avoid 'unset $TMUX to force' error
+                TMUX= tmux new-session -d -s $1
+                                    tmux switch-client -t $1
+                                    }
+
+# Aliases
+alias tnew='tnew_session'
+alias tls='tmux list-session'
+alias tlw='tmux list-window'
+alias tsw='tmux switch -t '
+alias tlc='tmux list-command'
+alias tat='tmux attach -t'
+alias trs='tmux rename-session -t'
+alias tds='tmux detach -s'
+alias tresocteon='tmux-session restore ; tat octeontx'
+alias tsave='tmux-session save'
+# Killing
+alias tks='tmux kill-session -t'
+
+
+alias rel='cd /mnt/sw_qa_snap/releases/octeontx'
+#alias sdk='pushd /home/hkarlara/Work/octeontx/OCTEONTX-SDK'
+alias sdk='pushd /home/hkarlara/Work/octeontx/OCTEONTX-SDK_latest/se2-rel4-samsung/octeontx-sdk/'
+alias cpt='pushd /home/hkarlara/Work/octeontx/octeontx_CPT_sdk/cpt-sdk'
+alias krnl='pushd /home/hkarlara/Work/octeontx/OCTEONTX-SDK_latest/se2-rel4-samsung/octeontx-sdk/linux/kernel/linux-octeontx'
+alias cptdebug='pushd /home/hkarlara/Work/octeontx/OCTEONTX-SDK_latest/se2-rel4-samsung/octeontx-sdk/linux/kernel/linux-octeontx/cpt-sdk'
+alias vi='vim'
+alias docs='pushd /home/hkarlara/Work/Documents'
+alias rd='readlink -f'
+alias bd='. bd -si'
+alias clc="clear && printf '\e[3J'"
+alias cls="clear"
+alias lvi='vim -S ~/.vim/mysession.vim'
+
+alias pd='pushd'
+alias po='popd'
+alias dirs='dirs -v'
+
+
+function gr { grep -rnIi "$1" . --color; }
+
+alias board='ssh root@10.90.205.210'

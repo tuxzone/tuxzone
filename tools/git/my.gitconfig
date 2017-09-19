@@ -1,0 +1,48 @@
+[user]
+	name = Harman Kalra
+	email = harman4linux@gmail.com
+[diff]
+	tool = vimdiff
+	noprefix = true
+[difftool]
+	prompt = false
+	bc3 = trustExitCode
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+	bc3 = trustExitCode
+[color]
+	ui = true
+[core]
+	excludesfile = /path/to/.gitignore_global
+	autocrlf = false
+	pager = less -R
+	fileMode = false
+[alias]
+	st = status
+    stu = status -uno
+	ci = commit
+	co = checkout
+	br = branch
+    l = log --graph --pretty=format:'%C(red)%h%C(dim blue reverse)%d%Creset %s %C(cyan)- %an, %ar%Creset'
+	ml = log --graph --merges --pretty=format:'%C(red)%h%C(reverse yellow)%d%Creset %s %C(cyan)- %an, %ar%Creset'
+    ll = log --graph --pretty=format:'%C(red)%h%Creset -%C(reverse yellow)%d%Creset %s %C(red bold)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
+	sl = shortlog
+    dl = log --name-status -1
+    dv = difftool -t=vimdiff
+    up = pull origin master
+	review = difftool -t=vimdiff origin/master...
+	bname = rev-parse --abbrev-ref HEAD
+	pub = push -u origin $(git bname)
+	d = difftool
+	mt = mergetool
+[gc]
+	autoDetach = false
+[push]
+	default = matching
+[color "status"]
+	changed = red
+[color "branch"]
+	remote = red

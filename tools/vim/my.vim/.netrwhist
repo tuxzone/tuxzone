@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/hkarlara/Work/octeontx/OCTEONTX-SDK/bootloader/grub/docs'
+let g:netrw_dirhist_2='/home/hkarlara/Work/octeontx/OCTEONTX-SDK/linux/kernel/linux-aarch64/drivers'
+let g:netrw_dirhist_3='/home/hkarlara/Work/octeontx/OCTEONTX-SDK/linux/kernel/linux-aarch64'
