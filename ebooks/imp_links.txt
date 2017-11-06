@@ -1,3 +1,6 @@
+Nice blog on networking and other line stuff - strace and ltrace detailed working
+https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/
+
 Nice wiki
 http://wiki.dreamrunner.org/public_html/
 http://wiki.dreamrunner.org/public_html/Embedded-System/Linux-Device-Tree.html
