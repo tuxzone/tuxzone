@@ -1,3 +1,11 @@
+Virtualization links
+https://www.ibm.com/developerworks/library/l-virtio/        - ----- virtio
+https://www.ibm.com/developerworks/linux/library/l-libvirt/index.html   -----libvirt
+https://www.ibm.com/developerworks/linux/library/l-pci-passthrough/index.html    ----linux pci virtualization and passthrough
+https://www.ibm.com/developerworks/linux/library/l-hypervisor/index.html ----linux hypervisor
+http://networksandservers.blogspot.in/2011/11/para-is-english-affix-of-greek-origin.html  ......... paravirtualization explained
+
+
 Nice blog on networking and other line stuff - strace and ltrace detailed working
 https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/
 
