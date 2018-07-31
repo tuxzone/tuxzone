@@ -1,3 +1,6 @@
+Nice kernel blog:
+http://iakovlev.org/index.html?p=1222&m=1&l1=3
+
 Virtualization links
 https://www.ibm.com/developerworks/library/l-virtio/        - ----- virtio
 https://www.ibm.com/developerworks/linux/library/l-libvirt/index.html   -----libvirt
