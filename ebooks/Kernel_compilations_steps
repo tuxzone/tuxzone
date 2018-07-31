@@ -1,0 +1,32 @@
+awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+grub2-set-default 0
+grub2-set-default 2
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+Getting the latest kernel sources
+	git clone https://github.com/torvalds/linux.git
+
+If SSL related issue
+	yum install openssl-devel 
+
+Kernel Compilations steps
+	make -j12
+	make  modules_install
+	make install
+
+Initramfs creation
+	update-initramfs -c -k    ---- If ubuntu system
+
+For Centos:
+	cp /boot/initramfs-4.18.0-rc6+.img /boot/initramfs-4.18.0-rc6+.img_bk
+	dracut -f /boot/initramfs-4.18.0-rc6+.img /boot/initramfs-4.18.0-rc6+.img
+	dracut -f "" `make kernelrelease`
+
+Grub setting
+	update-grub   -------- If ubuntu
+For Centos
+	awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+	grub2-set-default 0
+	grub2-mkconfig -o /boot/grub2/grub.cfg
+
