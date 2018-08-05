@@ -1,3 +1,6 @@
+Nice tutorial on arm assembly:
+https://thinkingeek.com/arm-assembler-raspberry-pi/
+
 Nice kernel blog:
 http://iakovlev.org/index.html?p=1222&m=1&l1=3
 
