@@ -1,3 +1,6 @@
+Nice thesis IOMMU
+http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2015/MSC/MSC-2015-10.pdf
+
 Nice tutorial on arm assembly:
 https://thinkingeek.com/arm-assembler-raspberry-pi/
 
