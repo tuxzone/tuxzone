@@ -1,3 +1,9 @@
+OVS links
+https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-pfaff.pdf           ----- OVS design paper
+https://software.intel.com/en-us/articles/the-open-vswitch-exact-match-cache           ----- EMC
+https://software.intel.com/en-us/articles/ovs-dpdk-datapath-classifier          --datapath classifier part1
+https://software.intel.com/en-us/articles/ovs-dpdk-datapath-classifier-part-2      --datapath classifier part2
+
 Nice thesis IOMMU
 http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2015/MSC/MSC-2015-10.pdf
 
