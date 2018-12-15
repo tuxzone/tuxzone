@@ -1,3 +1,8 @@
+Nice Kernel Docs
+https://www.kernel.org/doc/html/latest/vm/remap_file_pages.html
+Networking: From the Ethernet MAC to the Link Partner -- excellent talk
+https://bootlin.com/blog/back-from-elce-2018-talks-tutorials-and-demos-from-bootlin/
+
 OVS links
 https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-pfaff.pdf           ----- OVS design paper
 https://software.intel.com/en-us/articles/the-open-vswitch-exact-match-cache           ----- EMC
