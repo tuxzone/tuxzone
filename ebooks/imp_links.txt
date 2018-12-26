@@ -1,4 +1,6 @@
 ARM assembly:
+https://www.merckedsecurity.com/blog/smashing-the-arm-stack-part-1    --- arm stack
+http://www.toves.org/books/armsub/      ---- arm stack
 https://thinkingeek.com/2016/10/08/exploring-aarch64-assembler-chapter1/      --- nice blog on arm64
 https://github.com/odzhan/shellcode                 ---- nice repo, arms docs and assemble code
 https://modexp.wordpress.com/2018/10/30/arm64-assembly/               ----nice blog
