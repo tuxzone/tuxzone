@@ -1,0 +1,25 @@
+set editor = `echo \$EDITOR`
+set imap_user='hkalra@marvell.com'
+set from="hkalra@marvell.com"
+set hostname="outlook.office365.com"
+set folder=imaps://outlook.office365.com:993/
+set postponed ="=Drafts"
+set spoolfile="+INBOX/DPDK-ML"
+set smtp_url="smtp://$imap_user:$imap_pass@smtp.office365.com:587"
+unset imap_passive
+set imap_keepalive = 300
+set mail_check = 120
+set sort=threads
+set sort_aux=last-date-received
+set collapse_unread
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+#pass from gnome keyring
+#
+source ~/.mutt/mutt_shortcuts
+#set my_name = 'Nithin Dabilpuram<Nithin.Dabilpuram@cavium.com>'

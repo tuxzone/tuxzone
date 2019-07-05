@@ -1,0 +1,31 @@
+Change the git repo
+	git remote add new <new repo link>
+	git remote remove origin
+	git remote rename new origin
+	git fetch origin
+
+git stash
+	git stash
+	git stash list
+	git stash appy
+	git stash pop
+
+git describe, it describes the latest sha
+	git describe
+
+git revert, to revert a old patch
+	git revert -n <commit id>
+
+git rebase -i <commit_id>, to make a change in below commits
+	git rebase -i <commit_id>    // commit id corresponds to old commit above which changes are to be done
+	    choose "e" for commit to be modified 
+        git rebase --continue
+	git rebase --abort
+
+git difftool
+	git difftool <commit_id> .
+	git difftool <commit_id> <old_commit_id>
+
+Change commit author before sending
+	git ci  --amend --author="harman4linux@gmail.com"
+	
