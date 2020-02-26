@@ -27,6 +27,9 @@ Nice kernel blog:
 http://iakovlev.org/index.html?p=1222&m=1&l1=3
 
 Virtualization links
+https://www.redhat.com/en/blog/how-vhost-user-came-being-virtio-networking-and-dpdk      ......  Virtio-networking and DPDK  (imp)
+https://www.redhat.com/en/blog/introduction-virtio-networking-and-vhost-net      ..... vhost and virtio
+https://www.redhat.com/en/blog/deep-dive-virtio-networking-and-vhost-net    ..... deep dive - advanced
 https://www.ibm.com/developerworks/library/l-virtio/        - ----- virtio
 https://www.ibm.com/developerworks/linux/library/l-libvirt/index.html   -----libvirt
 https://www.ibm.com/developerworks/linux/library/l-pci-passthrough/index.html    ----linux pci virtualization and passthrough
