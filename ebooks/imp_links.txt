@@ -1,3 +1,25 @@
+Memory barriers:
+Must read:
+Asm volatile(“”:::”memory”)
+Here “memory is called clobber, understand the use:
+https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html
+
+Google: asm clobber list
+
+http://locklessinc.com/articles/locks/     … very nce 
+https://preshing.com/20120710/memory-barriers-are-like-source-control-operations/
+https://preshing.com/20130922/acquire-and-release-fences/
+https://preshing.com/20130823/the-synchronizes-with-relation/
+https://llvm.org/docs/Atomics.html
+https://www.internalpointers.com/post/understanding-memory-ordering
+https://www.linuxjournal.com/article/8211
+https://www.linuxjournal.com/article/8212
+https://stackoverflow.com/questions/25345440/how-does-the-cache-coherency-protocol-enforce-atomicity
+https://software.intel.com/content/www/us/en/develop/articles/implementing-scalable-atomic-locks-for-multi-core-intel-em64t-and-ia32-architectures.html
+
+
+
+
 ARM assembly:
 https://www.merckedsecurity.com/blog/smashing-the-arm-stack-part-1    --- arm stack
 http://www.toves.org/books/armsub/      ---- arm stack
