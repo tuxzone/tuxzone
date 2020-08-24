@@ -3,6 +3,7 @@ Must read:
 Asm volatile(“”:::”memory”)
 Here “memory is called clobber, understand the use:
 https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html
+https://www.ibm.com/developerworks/rational/library/inline-assembly-c-cpp-guide/index.html    -------- guide to inline asm in c (volatile asm {})  v v v imp and noc link
 
 Google: asm clobber list
 
