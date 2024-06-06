@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690.71333306" height="279.99993" font-family="Consolas, Menlo, 'Bitstream Vera Sans Mono', monospace, 'Powerline Symbols'" font-size="14px">
+  <style>
+    .br { font-weight: bold }
+    .fa { fill-opacity: 0.5 }
+    .it { font-style: italic }
+    .un { text-decoration: underline }
+  </style>
+
+  <rect width="100%" height="100%" style="fill: #121314" rx="4" ry="4"></rect>
+
+  <svg x="8.42333333" y="9.333331000000001" class="default-text-fill">
+    <g style="shape-rendering: optimizeSpeed">
+
+        <rect x="101.07999996000001" y="242.66660600000003" width="8.42333333" height="18.666662000000002" style="fill: #d9d9d9"></rect>
+
+
+    </g>
+
+    <text style="fill: #cccccc">
+      <tspan y="0.0">
+        <tspan dy="1em" x="16.84666666" style="fill: rgb(246,108,29)">
+_
+        </tspan><tspan x="25.269999990000002" style="fill: rgb(250,96,37)">
+_
+        </tspan><tspan x="42.11666665" style="fill: rgb(254,72,56)">
+_
+        </tspan><tspan x="58.96333331" style="fill: rgb(253,50,79)">
+_
+        </tspan><tspan x="67.38666664" style="fill: rgb(251,41,91)">
+_
+        </tspan><tspan x="75.80999997" style="fill: rgb(248,32,103)">
+_
+        </tspan><tspan x="101.07999996000001" style="fill: rgb(230,11,141)">
+_
+        </tspan><tspan x="109.50333329" style="fill: rgb(222,7,154)">
+_
+        </tspan><tspan x="117.92666662" style="fill: rgb(213,3,166)">
+_
+        </tspan><tspan x="126.34999995" style="fill: rgb(203,1,178)">
+(
+        </tspan><tspan x="134.77333328" style="fill: rgb(193,1,189)">
+_
+        </tspan><tspan x="143.19666661" style="fill: rgb(182,1,200)">
+|
+        </tspan><tspan x="151.61999994" style="fill: rgb(170,3,210)">
+_
+        </tspan><tspan x="160.04333327" style="fill: rgb(158,6,219)">
+)
+        </tspan><tspan x="168.4666666" style="fill: rgb(145,10,227)">
+_
+        </tspan><tspan x="185.31333326" style="fill: rgb(120,21,241)">
+_
+        </tspan><tspan x="193.73666659" style="fill: rgb(107,29,246)">
+_
+        </tspan><tspan x="227.42999991" style="fill: rgb(60,68,254)">
+_
+        </tspan><tspan x="235.85333324" style="fill: rgb(50,79,253)">
+_
+        </tspan><tspan x="244.27666657" style="fill: rgb(40,91,251)">
+_
+        </tspan><tspan x="261.12333323" style="fill: rgb(24,116,243)">
+_
+        </tspan><tspan x="277.96999989" style="fill: rgb(11,142,230)">
+_
+        </tspan><tspan x="286.39333322" style="fill: rgb(7,154,222)">
+_
+        </tspan><tspan x="303.23999988" style="fill: rgb(1,178,203)">
+_
+        </tspan><tspan x="311.66333321" style="fill: rgb(1,190,192)">
+_
+        </tspan><tspan x="320.08666654" style="fill: rgb(1,200,181)">
+_
+        </tspan><tspan x="353.77999986000003" style="fill: rgb(15,235,132)">
+_
+        </tspan><tspan x="362.20333319" style="fill: rgb(22,241,119)">
+_
+        </tspan><tspan x="379.04999985" style="fill: rgb(38,250,94)">
+_
+        </tspan>
+      </tspan><tspan y="18.666662000000002">
+        <tspan dy="1em" x="8.42333333" style="fill: rgb(253,84,46)">
+/
+        </tspan><tspan x="25.269999990000002" style="fill: rgb(254,61,67)">
+_
+        </tspan><tspan x="33.69333332" style="fill: rgb(253,50,79)">
+`
+        </tspan><tspan x="50.539999980000005" style="fill: rgb(248,32,103)">
+/
+        </tspan><tspan x="67.38666664" style="fill: rgb(237,17,128)">
+_
+        </tspan><tspan x="75.80999997" style="fill: rgb(230,11,141)">
+_
+        </tspan><tspan x="84.2333333" style="fill: rgb(222,7,154)">
+|
+        </tspan><tspan x="92.65666663" style="fill: rgb(213,3,166)">
+/
+        </tspan><tspan x="109.50333329" style="fill: rgb(193,1,189)">
+_
+        </tspan><tspan x="117.92666662" style="fill: rgb(182,1,200)">
+_
+        </tspan><tspan x="126.34999995" style="fill: rgb(170,3,210)">
+|
+        </tspan><tspan x="143.19666661" style="fill: rgb(145,10,227)">
+|
+        </tspan><tspan x="160.04333327" style="fill: rgb(120,21,241)">
+|
+        </tspan><tspan x="176.88999993000002" style="fill: rgb(95,37,250)">
+&#39;
+        </tspan><tspan x="185.31333326" style="fill: rgb(83,47,253)">
+_
+        </tspan><tspan x="202.15999992000002" style="fill: rgb(60,68,254)">
+\
+        </tspan><tspan x="219.00666658" style="fill: rgb(40,91,251)">
+/
+        </tspan><tspan x="235.85333324" style="fill: rgb(24,116,243)">
+_
+        </tspan><tspan x="252.6999999" style="fill: rgb(11,142,230)">
+\
+        </tspan><tspan x="269.54666656" style="fill: rgb(3,166,213)">
+&#39;
+        </tspan><tspan x="277.96999989" style="fill: rgb(1,178,203)">
+_
+        </tspan><tspan x="294.81666655" style="fill: rgb(1,200,181)">
+`
+        </tspan><tspan x="311.66333321" style="fill: rgb(6,220,157)">
+_
+        </tspan><tspan x="328.50999987" style="fill: rgb(15,235,132)">
+\
+        </tspan><tspan x="345.35666653" style="fill: rgb(29,246,107)">
+/
+        </tspan><tspan x="362.20333319" style="fill: rgb(47,253,82)">
+_
+        </tspan><tspan x="370.62666652" style="fill: rgb(58,254,71)">
+`
+        </tspan><tspan x="387.47333318" style="fill: rgb(80,253,49)">
+|
+        </tspan>
+      </tspan><tspan y="37.333324000000005">
+        <tspan dy="1em" x="0.0" style="fill: rgb(254,61,67)">
+|
+        </tspan><tspan x="16.84666666" style="fill: rgb(251,41,91)">
+(
+        </tspan><tspan x="25.269999990000002" style="fill: rgb(248,32,103)">
+_
+        </tspan><tspan x="33.69333332" style="fill: rgb(243,24,116)">
+|
+        </tspan><tspan x="50.539999980000005" style="fill: rgb(230,11,141)">
+\
+        </tspan><tspan x="58.96333331" style="fill: rgb(222,7,154)">
+_
+        </tspan><tspan x="67.38666664" style="fill: rgb(213,3,166)">
+_
+        </tspan><tspan x="84.2333333" style="fill: rgb(193,1,189)">
+\
+        </tspan><tspan x="101.07999996000001" style="fill: rgb(170,3,210)">
+(
+        </tspan><tspan x="109.50333329" style="fill: rgb(158,6,219)">
+_
+        </tspan><tspan x="117.92666662" style="fill: rgb(145,10,227)">
+_
+        </tspan><tspan x="126.34999995" style="fill: rgb(133,15,235)">
+|
+        </tspan><tspan x="143.19666661" style="fill: rgb(107,29,246)">
+|
+        </tspan><tspan x="160.04333327" style="fill: rgb(83,47,253)">
+|
+        </tspan><tspan x="176.88999993000002" style="fill: rgb(60,68,254)">
+|
+        </tspan><tspan x="193.73666659" style="fill: rgb(40,91,251)">
+|
+        </tspan><tspan x="210.58333325" style="fill: rgb(24,116,243)">
+|
+        </tspan><tspan x="235.85333324" style="fill: rgb(7,154,222)">
+_
+        </tspan><tspan x="244.27666657" style="fill: rgb(3,166,213)">
+_
+        </tspan><tspan x="252.6999999" style="fill: rgb(1,178,203)">
+/
+        </tspan><tspan x="269.54666656" style="fill: rgb(1,200,181)">
+|
+        </tspan><tspan x="286.39333322" style="fill: rgb(6,220,157)">
+|
+        </tspan><tspan x="303.23999988" style="fill: rgb(15,235,132)">
+|
+        </tspan><tspan x="320.08666654" style="fill: rgb(29,246,107)">
+|
+        </tspan><tspan x="336.9333332" style="fill: rgb(47,253,82)">
+|
+        </tspan><tspan x="353.77999986000003" style="fill: rgb(69,254,60)">
+(
+        </tspan><tspan x="362.20333319" style="fill: rgb(80,253,49)">
+_
+        </tspan><tspan x="370.62666652" style="fill: rgb(92,251,40)">
+|
+        </tspan><tspan x="387.47333318" style="fill: rgb(117,242,23)">
+|
+        </tspan>
+      </tspan><tspan y="55.99998600000001">
+        <tspan dy="1em" x="8.42333333" style="fill: rgb(243,24,116)">
+\
+        </tspan><tspan x="16.84666666" style="fill: rgb(237,17,128)">
+_
+        </tspan><tspan x="25.269999990000002" style="fill: rgb(230,11,141)">
+_
+        </tspan><tspan x="33.69333332" style="fill: rgb(222,7,154)">
+,
+        </tspan><tspan x="42.11666665" style="fill: rgb(213,3,166)">
+_
+        </tspan><tspan x="50.539999980000005" style="fill: rgb(203,1,178)">
+|
+        </tspan><tspan x="58.96333331" style="fill: rgb(193,1,189)">
+_
+        </tspan><tspan x="67.38666664" style="fill: rgb(182,1,200)">
+_
+        </tspan><tspan x="75.80999997" style="fill: rgb(170,3,210)">
+_
+        </tspan><tspan x="84.2333333" style="fill: rgb(158,6,219)">
+/
+        </tspan><tspan x="92.65666663" style="fill: rgb(145,10,227)">
+\
+        </tspan><tspan x="101.07999996000001" style="fill: rgb(133,15,235)">
+_
+        </tspan><tspan x="109.50333329" style="fill: rgb(120,21,241)">
+_
+        </tspan><tspan x="117.92666662" style="fill: rgb(107,29,246)">
+_
+        </tspan><tspan x="126.34999995" style="fill: rgb(95,37,250)">
+|
+        </tspan><tspan x="134.77333328" style="fill: rgb(83,47,253)">
+_
+        </tspan><tspan x="143.19666661" style="fill: rgb(71,57,254)">
+|
+        </tspan><tspan x="151.61999994" style="fill: rgb(60,68,254)">
+_
+        </tspan><tspan x="160.04333327" style="fill: rgb(50,79,253)">
+|
+        </tspan><tspan x="168.4666666" style="fill: rgb(40,91,251)">
+_
+        </tspan><tspan x="176.88999993000002" style="fill: rgb(31,104,247)">
+|
+        </tspan><tspan x="193.73666659" style="fill: rgb(17,129,237)">
+|
+        </tspan><tspan x="202.15999992000002" style="fill: rgb(11,142,230)">
+_
+        </tspan><tspan x="210.58333325" style="fill: rgb(7,154,222)">
+|
+        </tspan><tspan x="219.00666658" style="fill: rgb(3,166,213)">
+\
+        </tspan><tspan x="227.42999991" style="fill: rgb(1,178,203)">
+_
+        </tspan><tspan x="235.85333324" style="fill: rgb(1,190,192)">
+_
+        </tspan><tspan x="244.27666657" style="fill: rgb(1,200,181)">
+_
+        </tspan><tspan x="252.6999999" style="fill: rgb(3,210,169)">
+|
+        </tspan><tspan x="261.12333323" style="fill: rgb(6,220,157)">
+_
+        </tspan><tspan x="269.54666656" style="fill: rgb(10,228,145)">
+|
+        </tspan><tspan x="286.39333322" style="fill: rgb(22,241,119)">
+|
+        </tspan><tspan x="294.81666655" style="fill: rgb(29,246,107)">
+_
+        </tspan><tspan x="303.23999988" style="fill: rgb(38,250,94)">
+|
+        </tspan><tspan x="320.08666654" style="fill: rgb(58,254,71)">
+|
+        </tspan><tspan x="328.50999987" style="fill: rgb(69,254,60)">
+_
+        </tspan><tspan x="336.9333332" style="fill: rgb(80,253,49)">
+|
+        </tspan><tspan x="345.35666653" style="fill: rgb(92,251,40)">
+\
+        </tspan><tspan x="353.77999986000003" style="fill: rgb(104,247,31)">
+_
+        </tspan><tspan x="362.20333319" style="fill: rgb(117,242,23)">
+_
+        </tspan><tspan x="370.62666652" style="fill: rgb(130,236,16)">
+,
+        </tspan><tspan x="379.04999985" style="fill: rgb(142,229,11)">
+_
+        </tspan><tspan x="387.47333318" style="fill: rgb(155,221,6)">
+|
+        </tspan>
+      </tspan><tspan y="93.33331000000001">
+        <tspan dy="1em" x="0.0">
+&gt; # Cool!
+        </tspan>
+      </tspan><tspan y="111.99997200000001">
+        <tspan dy="1em" x="0.0">
+&gt; # Let&#39;s end the recording session now
+        </tspan>
+      </tspan><tspan y="130.66663400000002">
+        <tspan dy="1em" x="0.0">
+&gt;
+        </tspan>
+      </tspan><tspan y="149.33329600000002">
+        <tspan dy="1em" x="0.0">
+exit
+        </tspan>
+      </tspan><tspan y="167.99995800000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+asciinema: recording finished
+        </tspan>
+      </tspan><tspan y="186.66662000000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+asciinema: asciicast saved to demo.cast
+        </tspan>
+      </tspan><tspan y="205.33328200000003">
+        <tspan dy="1em" x="0.0">
+&gt; # We&#39;ll replay it in the terminal to see if it&#39;s any good
+        </tspan>
+      </tspan><tspan y="223.99994400000003">
+        <tspan dy="1em" x="0.0">
+&gt; asciinema play demo.cast
+        </tspan>
+      </tspan><tspan y="242.66660600000003">
+        <tspan dy="1em" x="0.0">
+&gt; # This is 
+        </tspan>
+      </tspan>
+    </text>
+  </svg>
+
+  <g transform="translate(-40 -40)">
+    <svg x="50%" y="50%" width="80" height="80">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.0 1000.0" style="filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4))">
+  <defs>
+    <mask id="small-triangle-mask">
+      <rect width="100%" height="100%" fill="white"></rect>
+      <polygon points="700.0 500.0, 400.00000000000006 326.7949192431122, 399.9999999999999 673.2050807568877" fill="black">
+      </polygon>
+    </mask>
+  </defs>
+  <polygon points="1000.0 500.0, 250.0000000000001 66.98729810778059, 249.99999999999977 933.0127018922192" mask="url(#small-triangle-mask)" fill="white">
+  </polygon>
+  <polyline points="673.2050807568878 400.0, 326.7949192431123 600.0" stroke="white" stroke-width="90">
+  </polyline>
+</svg>
+    </svg>
+  </g>
+</svg>
