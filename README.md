@@ -2,5 +2,5 @@
 Git repository including some practice programs
 
 [![asciinema CLI
-demo](practice/html_exe/click.png)](https://raw.githack.com/tuxzone/tuxzone/master/practice/html_exe/install.html)
+demo](<img src="practice/html_exe/click.png" alt="drawing" width="200"/>)](https://raw.githack.com/tuxzone/tuxzone/master/practice/html_exe/install.html)
 
